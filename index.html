@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cours de Virtualisation 2026 | IBAM</title>
+    <meta name="description" content="Découvrez le cours de virtualisation, conteneurisation et Vagrant à l'IBAM. Formation d'excellence pour les futurs experts en infrastructure.">
+    
+    <!-- Google Fonts: Outfit (Local) -->
+    <link rel="stylesheet" href="css/outfit.css">
+    
+    <!-- Font Awesome (Local) -->
+    <link rel="stylesheet" href="css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo-ibam.png" alt="Logo IBAM" class="logo-img">
+                <span class="logo-text">H'PRIM <span class="highlight">innov</span></span>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link active">Accueil</a></li>
+                    <li><a href="#about" class="nav-link">propos</a></li>
+                    <li><a href="#modules" class="nav-link">services</a></li>
+                    <li><a href="#contact" class="nav-link btn-cta">Contact</a></li>
+                </ul>
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+<section id="hero" class="hero">
+
+    <!-- Background Video -->
+    <video class="hero-video" autoplay muted loop playsinline>
+        <source src="img/video.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la vidéo HTML5.
+    </video>
+
+    <!-- Overlay sombre -->
+    <div class="hero-overlay"></div>
+
+    <!-- Contenu -->
+    <div class="hero-content">
+        <h1 class="hero-title">L'IMPRESSION TOUT SUPPORT</h1>
+
+        <p class="hero-subtitle">
+            Donnez de la valeur a votre  
+            <span class="text-gradient">entreprise</span>, 
+            grace a nos <span class="text-gradient">serices</span> 
+            d'impression tout <span class="text-gradient">support</span>.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#modules" class="btn btn-primary">Découvrir Nos Services</a>
+            <a href="#about" class="btn btn-secondary">En savoir plus</a>
+        </div>
+    </div>
+
+    <!-- Effets visuels -->
+    <div class="hero-visual">
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
+    </div>
+
+</section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Pourquoi H'prim innov ?</h2>
+                <p class="section-desc">Le partenaire fiable , référence nationale en impression et identitée visuelle.</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <i class="fas fa-university about-icon"></i>
+                    <h3>Respectueuse des Delais</h3>
+                    <p>un travail rigoureux conçus pour répondre aux besoins réels du marché.</p>
+                </div>
+                <div class="about-card">
+                    <i class="fas fa-laptop-code about-icon"></i>
+                    <h3>Service après Impression</h3>
+                    <p>Nous nous limitons pas a realiser vos visuel;nous accompagnons et servons.</p>
+                </div>
+                <div class="about-card">
+                    <i class="fas fa-certificate about-icon"></i>
+                    <h3>Certification Reconnue</h3>
+                    <p>Un diplôme valorisé par les entreprises leaders du secteur IT.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modules Section -->
+    <section id="modules" class="section modules">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nos Services</h2>
+                <p class="section-desc">Nous impression vos visuelles sur tout type de support pour valoriserl'identité de votre entreprise .</p>
+            </div>
+            
+            <!-- Virtualization -->
+            <div class="module-row">
+                <div class="module-content">
+                    <span class="module-tag">Fondation</span>
+                    <h3 class="module-title">Virtualisation</h3>
+                    <p class="module-text">Optimisez vos ressources matérielles en exécutant plusieurs systèmes d'exploitation sur une seule machine physique. Réduisez les coûts, améliorez la sécurité et simplifiez la gestion du parc informatique.</p>
+                    <ul class="module-features">
+                        <li><i class="fas fa-check"></i> Isolation des services</li>
+                        <li><i class="fas fa-check"></i> Haute disponibilité</li>
+                        <li><i class="fas fa-check"></i> Hyperviseurs Type 1 & 2</li>
+                    </ul>
+                </div>
+                <div class="module-visual">
+                    <i class="fas fa-server module-icon"></i>
+                </div>
+            </div>
+
+            <!-- Containerization -->
+            <div class="module-row reverse">
+                <div class="module-content">
+                    <span class="module-tag">Agilité</span>
+                    <h3 class="module-title">Conteneurisation</h3>
+                    <p class="module-text">Passez à la vitesse supérieure avec Docker. Déployez vos applications instantanément, n'importe où. Légers et portables, les conteneurs révolutionnent le développement et la mise en production.</p>
+                    <ul class="module-features">
+                        <li><i class="fas fa-check"></i> Docker et Docker Compose</li>
+                        <li><i class="fas fa-check"></i> Microservices</li>
+                        <li><i class="fas fa-check"></i> Déploiement continu</li>
+                    </ul>
+                </div>
+                <div class="module-visual">
+                    <i class="fab fa-docker module-icon"></i>
+                </div>
+            </div>
+
+            <!-- Vagrant -->
+            <div class="module-row">
+                <div class="module-content">
+                    <span class="module-tag">Workflow</span>
+                    <h3 class="module-title">Vagrant</h3>
+                    <p class="module-text">Automatisez la création de vos environnements de développement. Dites adieu au "ça marche chez moi". Avec Vagrant, vos environnements sont codifiés, partageables et reproductibles à l'identique.</p>
+                    <ul class="module-features">
+                        <li><i class="fas fa-check"></i> Infrastructure as Code</li>
+                        <li><i class="fas fa-check"></i> Provisionning automatisé</li>
+                        <li><i class="fas fa-check"></i> Synchro inter-environnements</li>
+                    </ul>
+                </div>
+                <div class="module-visual">
+                    <i class="fas fa-box-open module-icon"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <span>h'prim innov 2026</span>
+            </div>
+            <div class="footer-links">
+                <a href="#">Mentions Légales</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 h'prim innov - impression tout support. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
