@@ -469,10 +469,11 @@ ul {
     }
 }
 
-.module-icon {
-    font-size: 8rem;
-    color: rgba(255, 255, 255, 0.05);
-    z-index: 1;
+.module-visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
 }
 
 .module-tag {
@@ -621,4 +622,150 @@ ul {
 .fade-in-section.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+
+/* Contact Section */
+.contact {
+    background: var(--primary-color);
+}
+
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.contact-item {
+    text-align: left;
+}
+
+.contact-icon {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.contact-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-light);
+}
+
+.contact-item p {
+    color: var(--text-dim);
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.contact-item .fa-whatsapp {
+    color: #25D366;
+    margin-left: 0.5rem;
+}
+
+.contact-form {
+    background: var(--primary-light);
+    padding: 2.5rem;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    color: var(--text-light);
+    font-family: var(--font-main);
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: var(--text-dim);
+}
+
+.contact-form select {
+    cursor: pointer;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.contact-form button {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* Responsive Contact */
+@media (max-width: 900px) {
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    
+    .contact-info {
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 1.5rem;
+    }
+}
+
+
+/* Map Thumbnail */
+.map-link {
+    display: block;
+    margin-top: 1rem;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.map-thumbnail {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid rgba(249, 115, 22, 0.3);
+    transition: var(--transition);
+}
+
+.map-link:hover .map-thumbnail {
+    border-color: var(--accent-color);
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(249, 115, 22, 0.3);
 }
